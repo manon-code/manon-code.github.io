@@ -1,0 +1,205 @@
+body {
+    background-color: #f0f0f0;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: arial, sans-serif;
+}
+
+body, ul, h2, h4, li{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+}
+
+.header {
+    background-color: #0064A6;
+    overflow: hidden;
+}
+
+/*
+html 12라인
+선생님 img는 header-wrap의 자식인데
+어째서 header에 마진을 줘야만 적용되는지 잘 모르겠습니다.*/
+.header .logo {
+    margin: 40px 0;
+}
+
+.header-wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.header-menu {
+    overflow: hidden;
+    background-color: #0190D1;
+}
+
+.header-menu li {
+    float: left;
+}
+
+.header-menu li:first-child {
+    background-color: white;
+}
+
+.header-menu .black-home {
+    color: black;
+}
+
+.header-menu li:hover{
+    background: #bcd4e6;
+}
+
+.header-menu a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: white;
+}
+
+/*선생님 이부분이 해깔리는 것 같습니다. 부모 형제에게 새로운 */
+/*BFC를 만들어주면 위로 올라갈 것 같은데 올라가지 않고 position으로 하는게
+ 더 좋은 해결 방법인가요? 어떤 레이아웃에서 특정 CSS기능을 쓰는것이 더 좋은 것인지가 어렵습니다 ㅜㅜ*/
+.header .wallpapers {
+    float: right;
+    margin-top: -230px;
+    margin-right: -40px;
+}
+
+/*선생님께서는 I-wrapper에 전부 width값을 일정하게 주시고 반복을 줄이셨는데 그렇게 하지 못했습니다.*/
+/*또 관습적으로 header, footer등 의미있는 div 클래스를 상단에 선언 후 사용하는데 */
+/*가운데에만 I-wraaper를 사용하신게 궁금합니다.*/
+
+.contents {
+    margin: 0 auto;
+    width: 960px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.contents-wrap {
+    padding: 20px;
+}
+
+.contents-wrap h2 {
+    color: #0190D1;
+}
+
+.contents-wrap a, p {
+    color: #999;
+}
+
+.side-bar {
+    float: right;
+    margin-left: 40px;
+}
+
+.side-bar a {
+    padding: 2px 0 2px 10px;
+    border-left: 3px solid #ddd;
+}
+
+.side-bar a:hover {
+    color: #0190D1;
+    border-left: 3px solid #0190D1;
+}
+
+.section-wrap {
+    overflow: hidden;
+}
+
+.section {
+    overflow: hidden;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #bcbcbc;
+}
+
+.section:last-child {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.section img {
+    float: left;
+    margin-right: 20px;
+}
+
+.footer {
+    background-color: #333333;
+}
+
+.footer-wrap {
+    margin: 0 auto;
+    width: 960px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.footer-menu {
+    float: right;
+}
+
+.footer-menu h4 {
+    margin-bottom: 10px;
+    color: #efefef;
+}
+
+.footer-list {
+    float: left;
+    margin-left: 50px;
+}
+
+.footer-list a {
+    color: #666;
+    font-size: 12px;
+}
+
+.tweeter {
+    width:0px;
+    height:0px;
+    margin-right: 5px;
+    padding: 0 10px 20px 20px;
+    background: url(images/tweeter.png) no-repeat;
+}
+
+.tweeter:hover {
+    background: url(images/tweeter-reverse.png) no-repeat;
+}
+
+.facebook {
+    width:0px;
+    height:0px;
+    margin-right: 5px;
+    padding: 0 10px 20px 20px;
+    background: url(images/facebook.png) no-repeat;
+}
+
+.facebook:hover {
+    background: url(images/favebook-reverse.png) no-repeat;
+}
+
+.pinterlest {
+    width:0px;
+    height:0px;
+    padding: 0 10px 20px 20px;
+    background: url(images/pinterlest.png) no-repeat;
+}
+
+.pinterlest:hover {
+    background: url(images/pinterlest-reverse.png) no-repeat;
+}
